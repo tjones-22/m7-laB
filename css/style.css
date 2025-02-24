@@ -112,9 +112,26 @@ height:1000px;
   grid-template-columns: 1fr 1fr;
   gap:1px;
   align-items: center;
+  animation: fadeIn 1.5s;
+  
 
 }
 
 img{
   border-radius: 5px;
+  animation: fadeIn 1.5s;
+}
+
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateX(-30px);
+  }50%{
+    opacity: 0.5;
+    
+  }100%{
+    opacity: 1.0;
+    transform: translateX(0px);
+  }
 }
